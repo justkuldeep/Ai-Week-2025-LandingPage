@@ -48,7 +48,7 @@ const About = () => {
             Join us for an immersive 6-day journey into the world of Artificial Intelligence. 
             Whether you're a beginner or an enthusiast, this event is designed to give you 
             hands-on experience with cutting-edge AI technologies and real-world applications.
-          </p>0
+          </p>
         </motion.div>
 
         <div className="grid md:grid-cols-2 lg:grid-cols-4 gap-6 mb-16">
@@ -83,7 +83,7 @@ const About = () => {
               <div className="text-muted-foreground">Days of Learning</div>
             </div>
             <div>
-              <div className="text-4xl font-bold text-primary mb-2">12+</div>
+              <div className="text-4xl font-bold text-primary mb-2">6</div>
               <div className="text-muted-foreground">Expert Sessions</div>
             </div>
             <div>
