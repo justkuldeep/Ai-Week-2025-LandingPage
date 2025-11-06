@@ -3,10 +3,10 @@ import { Instagram, Linkedin, Github, Globe, Heart } from 'lucide-react';
 
 const Footer = () => {
   const socialLinks = [
-    { icon: Instagram, href: '#', label: 'Instagram' },
-    { icon: Linkedin, href: '#', label: 'LinkedIn' },
+    { icon: Instagram, href: 'https://www.instagram.com/ai_club_iist', label: 'Instagram' },
+    { icon: Linkedin, href: 'https://www.linkedin.com/groups/15780087', label: 'LinkedIn' },
     { icon: Github, href: '#', label: 'GitHub' },
-    { icon: Globe, href: '#', label: 'College Website' },
+    { icon: Globe, href: 'https://indoreinstitute.com/', label: 'College Website' },
   ];
 
   return (

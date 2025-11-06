@@ -9,34 +9,34 @@ const Team = () => {
 
   const teamMembers = [
     {
-      name: 'Arjun Patel',
+      name: 'Mrs. Sukrati Agrawal',
       role: 'Event Coordinator',
       image: 'https://api.dicebear.com/7.x/avataaars/svg?seed=Arjun',
     },
     {
-      name: 'Sneha Reddy',
+      name: 'Bhavesh Prajapat',
       role: 'Technical Lead',
-      image: 'https://api.dicebear.com/7.x/avataaars/svg?seed=Sneha',
+      image: '../src/assets/bhavesh-prajapat.png',
     },
     {
-      name: 'Karan Mehta',
+      name: 'Aaradhya Rassay',
       role: 'Logistics Manager',
-      image: 'https://api.dicebear.com/7.x/avataaars/svg?seed=Karan',
+      image: '../src/assets/aaradhya-rassay2.png',
     },
     {
-      name: 'Riya Gupta',
+      name: 'Nishita Kanojiya',
       role: 'Marketing Head',
-      image: 'https://api.dicebear.com/7.x/avataaars/svg?seed=Riya',
+      image: '../src/assets/nishita-kanojiya.png',
     },
     {
-      name: 'Aditya Kumar',
+      name: 'Anshika Punase',
       role: 'Content Manager',
-      image: 'https://api.dicebear.com/7.x/avataaars/svg?seed=Aditya',
+      image: '../src/assets/anshika-punase.png',
     },
     {
-      name: 'Priyanka Singh',
+      name: 'Vasu Garg',
       role: 'Volunteer Coordinator',
-      image: 'https://api.dicebear.com/7.x/avataaars/svg?seed=Priyanka',
+      image: '../src/assets/vasu-garg.png',
     },
   ];
 

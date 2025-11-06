@@ -45,7 +45,7 @@ const Navbar = () => {
             className="text-xl font-bold bg-gradient-primary bg-clip-text text-transparent cursor-pointer"
             onClick={() => scrollToSection('home')}
           >
-            AI Essentials Week
+            AI Horizon
           </motion.div>
 
           {/* Desktop Menu */}

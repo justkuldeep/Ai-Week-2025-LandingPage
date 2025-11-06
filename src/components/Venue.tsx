@@ -94,8 +94,12 @@ const Venue = () => {
             initial={{ opacity: 0, x: 30 }}
             animate={isInView ? { opacity: 1, x: 0 } : {}}
             transition={{ delay: 0.4, duration: 0.6 }}
-            className="rounded-xl overflow-hidden border border-border shadow-glow h-full min-h-[400px]"
+            className="rounded-xl overflow-hidden border border-border shadow-glow h-full min-h-[400px] relative"
           >
+            {/*
+              Embedded Google Map centered on Indore Institute of Science and Technology.
+              We add an invisible overlay link so clicks on the map open Google Maps directions in a new tab.
+            */}
             <iframe
               src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3679.998834789869!2d75.87359931495674!3d22.72480938511907!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3962fd456d7e5b17%3A0x3e3b3c0c0c0c0c0c!2sIndore%20Institute%20of%20Science%20and%20Technology!5e0!3m2!1sen!2sin!4v1634567890123!5m2!1sen!2sin"
               width="100%"
@@ -105,6 +109,20 @@ const Venue = () => {
               loading="lazy"
               referrerPolicy="no-referrer-when-downgrade"
               className="w-full h-full"
+            />
+
+            {/* Transparent overlay to make the whole map clickable and open directions */}
+            <a
+              href="https://www.google.com/maps/dir/?api=1&destination=22.72480938511907,75.87359931495674&travelmode=driving"
+              target="_blank"
+              rel="noopener noreferrer"
+              aria-label="Open directions to Indore Institute of Science and Technology in Google Maps"
+              className="absolute inset-0"
+              style={{
+                // Ensure overlay is on top and receives pointer events
+                display: 'block',
+                background: 'transparent',
+              }}
             />
           </motion.div>
         </div>

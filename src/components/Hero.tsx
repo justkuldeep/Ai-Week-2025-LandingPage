@@ -13,7 +13,7 @@ const Hero = () => {
   });
 
   useEffect(() => {
-    const eventDate = new Date('2025-12-12T09:00:00').getTime();
+    const eventDate = new Date('2025-11-17T10:00:00').getTime();
 
     const timer = setInterval(() => {
       const now = new Date().getTime();
@@ -67,7 +67,7 @@ const Hero = () => {
           >
             <div className="px-6 py-2 rounded-full border border-primary/30 bg-primary/10 backdrop-blur-sm">
               <span className="text-sm font-medium text-primary-light">
-                December 12-17, 2025
+                November 17-24, 2025
               </span>
             </div>
           </motion.div>
@@ -81,10 +81,10 @@ const Hero = () => {
               className="text-5xl md:text-7xl lg:text-8xl font-bold"
             >
               <span className="bg-gradient-primary bg-clip-text text-transparent">
-                AI Essentials
+                AI Horizon
               </span>
               <br />
-              <span className="text-foreground">Week 2025</span>
+              <span className="text-foreground">2025</span>
             </motion.h1>
 
             <motion.p
@@ -93,7 +93,7 @@ const Hero = () => {
               transition={{ delay: 0.5 }}
               className="text-xl md:text-2xl text-muted-foreground max-w-2xl mx-auto"
             >
-              A 6-day journey through AI, ML, DL, NLP & GenAI
+              A 6-day journey uniting engineering, pharmacy, and management minds to AI, ML, DL, NLP, and GenAI.
             </motion.p>
           </div>
 
