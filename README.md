@@ -1,73 +1,96 @@
-# Welcome to your Lovable project
+# AI Week Nexus
 
-## Project info
+A polished, responsive single-page site built with Vite + React + TypeScript and a shadcn/ui-inspired component system. This repository powers the website for "AI Week" — an educational event featuring sessions, speakers, team, timeline, registration, and venue information.
 
-**URL**: https://lovable.dev/projects/055616e8-7e40-4cef-8886-f712d4dabb5d
+## Key features
 
-## How can I edit this code?
+- Modern frontend stack: Vite, React 18, TypeScript.
+- TailwindCSS-based design system with Radix UI primitives and custom shadcn-style components.
+- Sections for Hero, About, Speakers, Team, Timeline, Venue, and Registration.
+- Embedded Google Maps iframe for venue with a clickable overlay that opens Google Maps directions.
 
-There are several ways of editing your application.
+## Tech stack
 
-**Use Lovable**
+- React 18
+- TypeScript
+- Vite
+- Tailwind CSS
+- Framer Motion
+- Radix UI primitives
+- lucide-react icons
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/055616e8-7e40-4cef-8886-f712d4dabb5d) and start prompting.
+## Prerequisites
 
-Changes made via Lovable will be committed automatically to this repo.
+- Node.js 18+ (recommended)
+- npm, pnpm, or bun (project uses standard npm scripts; adapt if using pnpm or bun)
 
-**Use your preferred IDE**
+## Getting started (development)
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+1. Install dependencies:
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+```powershell
+npm install
+```
 
-Follow these steps:
+2. Start the dev server (Vite):
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
-
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
-
-# Step 3: Install the necessary dependencies.
-npm i
-
-# Step 4: Start the development server with auto-reloading and an instant preview.
+```powershell
 npm run dev
 ```
 
-**Edit a file directly in GitHub**
+3. Open the URL shown by Vite (usually http://localhost:5173) and navigate the site.
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+## Build and preview
 
-**Use GitHub Codespaces**
+Build for production:
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+```powershell
+npm run build
+```
 
-## What technologies are used for this project?
+Preview the production build locally:
 
-This project is built with:
+```powershell
+npm run preview
+```
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+## Linting
 
-## How can I deploy this project?
+Run ESLint across the repository:
 
-Simply open [Lovable](https://lovable.dev/projects/055616e8-7e40-4cef-8886-f712d4dabb5d) and click on Share -> Publish.
+```powershell
+npm run lint
+```
 
-## Can I connect a custom domain to my Lovable project?
+## Map / Venue details
 
-Yes, you can!
+- The Venue section `src/components/Venue.tsx` contains an embedded Google Maps iframe centered on:
+  - Indore Institute of Science and Technology
+  - Coordinates: `22.72480938511907, 75.87359931495674`
 
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
+- To improve usability, the map has a transparent overlay so that clicking anywhere on the map opens Google Maps directions in a new tab. The overlay URL uses the Google Maps Directions endpoint:
 
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
+```
+https://www.google.com/maps/dir/?api=1&destination=22.72480938511907,75.87359931495674&travelmode=driving
+```
+
+- If you'd prefer a fully interactive map (custom markers, info windows), consider replacing the iframe with a JavaScript map implementation (Google Maps JS API with an API key, or an OpenStreetMap solution using Leaflet).
+
+## Contributing
+
+Contributions are welcome. Suggested workflow:
+
+1. Fork the repository.
+2. Create a descriptive branch: `git checkout -b feat/your-feature`.
+3. Make changes and run the dev server and linting locally.
+4. Commit with clear messages and open a pull request describing the change.
+
+Please include screenshots for UI changes and ensure TypeScript compiles.
+
+## License
+
+Specify a license for this project (e.g., MIT) by adding a `LICENSE` file to the repository. If no license is provided the repository default applies.
+
+## Contact
+
+For questions or further changes, please open an issue or reach out via the repository.
