@@ -9,13 +9,6 @@ const Speakers = () => {
 
   const speakers = [
     {
-      name: 'Mr. Suyog Dixit',
-      role: 'AI Research Lead',
-      organization: 'Tech Innovations Lab',
-      expertise: 'Machine Learning & Deep Learning',
-      image: '',
-    },
-    {
       name: 'Dr. Shweta Agrawal',
       role: 'Professor',
       organization: 'IIST Indore',
@@ -32,8 +25,8 @@ const Speakers = () => {
     {
       name: 'Dr. Ratnesh Chaturvedi',
       role: 'HOD of AI Department',
-      organization: 'Analytics Pro',
-      expertise: 'AI in Healthcare',
+      organization: 'Gen AI Expert',
+      expertise: 'AI agents and Automation',
       image: '',
     },
     {
@@ -41,14 +34,14 @@ const Speakers = () => {
       role: 'Student',
       organization: 'IIST',
       expertise: 'ML Expertise',
-      image: '../src/assets/bhavesh-prajapat.png',
+      image: '../public/bhavesh-prajapat.png',
     },
     {
       name: 'Ms. Anshika Punase',
       role: 'Student',
       organization: 'IIST',
       expertise: 'ML Expertise',
-      image: '../src/assets/anshika-punase.png',
+      image: '../public/anshika-punase.png',
     },
   ];
 

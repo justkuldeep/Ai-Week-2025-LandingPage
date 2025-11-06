@@ -2,7 +2,6 @@ import { useState, useEffect } from 'react';
 import { motion } from 'framer-motion';
 import { Button } from '@/components/ui/button';
 import { Calendar, MapPin, ChevronDown } from 'lucide-react';
-import heroBg from '@/assets/hero-bg.jpg';
 
 const Hero = () => {
   const [timeLeft, setTimeLeft] = useState({
@@ -43,7 +42,7 @@ const Hero = () => {
       {/* Background */}
       <div className="absolute inset-0 bg-gradient-hero">
         <img
-          src={heroBg}
+          src="/hero-bg.jpg"
           alt="AI Background"
           className="w-full h-full object-cover opacity-30 mix-blend-overlay"
         />
