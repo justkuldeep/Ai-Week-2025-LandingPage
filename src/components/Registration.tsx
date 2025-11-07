@@ -9,7 +9,7 @@ const Registration = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   // Replace this with your Google Form URL when available
-  const googleFormUrl = "https://docs.google.com/forms/d/e/1FAIpQLSdfSVAZcygjraQ-qopbeFDkFIMYgI07kLBvgUYoIGmhLZLzjg/viewform?usp=sharing&ouid=103715509724690202079"; 
+  const googleFormUrl = "https://forms.gle/TvSSEWRpDGCNJiNV7" ; 
 
   const handleRegisterClick = () => {
     window.open(googleFormUrl, '_blank');
