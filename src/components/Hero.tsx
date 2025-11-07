@@ -66,7 +66,7 @@ const Hero = () => {
           >
             <div className="px-6 py-2 rounded-full border border-primary/30 bg-primary/10 backdrop-blur-sm">
               <span className="text-sm font-medium text-primary-light">
-                November 17-23, 2025
+                November 17-22, 2025
               </span>
             </div>
           </motion.div>
