@@ -12,22 +12,22 @@ const Speakers = () => {
       name: 'Dr. Shweta Agrawal',
       role: 'Professor',
       organization: 'IIST Indore',
-      expertise: 'Deep Learning',
-      image: '',
+      expertise: 'Nvidia DLI  University ambassador and certified instructor',
+      image: '/dr-shweta-agrawal',
     },
     {
       name: 'Mr. Piyush Parmar',
       role: 'Senior NLP Engineer',
-      organization: 'AI Solutions Inc',
+      organization: 'IIST Indore',
       expertise: 'NLP and LLM\'s',
-      image: '',
+      image: '/mr-piyush-parmar',
     },
     {
       name: 'Dr. Ratnesh Chaturvedi',
       role: 'HOD of AI Department',
       organization: 'Gen AI Expert',
       expertise: 'AI agents and Automation',
-      image: '',
+      image: '/dr-ratnesh-chaturvedi',
     },
     {
       name: 'Mr. Bhavesh Prajapat',
@@ -37,11 +37,11 @@ const Speakers = () => {
       image: '/bhavesh-prajapat.png',
     },
     {
-      name: 'Ms. Anshika Punase',
+      name: 'Mr. Aditya Chouksey',
       role: 'Student',
       organization: 'IIST',
       expertise: 'ML Expertise',
-      image: '/anshika-punase.png',
+      image: '/aditya-chouksey.png',
     },
   ];
 
