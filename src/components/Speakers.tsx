@@ -31,8 +31,8 @@ const Speakers = () => {
     },
     {
       name: 'Mr. Bharat Udawat',
-      role: 'Senior Consultant – Deloitte',
-      organization: 'IIST Indore',
+      role: 'Senior Consultant',
+      organization: 'Deloitte',
       expertise: 'AI in Management and Pharmacy',
       image: '/mr-bharat-udawat.png',
     },
