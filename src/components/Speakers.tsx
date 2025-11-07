@@ -3,24 +3,44 @@ import { useInView } from 'framer-motion';
 import { useRef } from 'react';
 import { Linkedin, Mail } from 'lucide-react';
 
+interface Speaker {
+  name: string;
+  role: string;
+  organization: string;
+  expertise: string;
+  image: string;
+  links: {
+    linkedin: string;
+    email: string;
+  };
+}
+
 const Speakers = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
-  const speakers = [
+  const speakers: Speaker[] = [
     {
       name: 'Dr. Shweta Agrawal',
       role: 'Professor',
       organization: 'IIST Indore',
-      expertise: 'Nvidia DLI  University ambassador and certified Instructor',
+      expertise: 'Nvidia DLI  University ambassador and certified Instructor',
       image: '/dr-shweta-agrawal.png',
+      links: {
+        linkedin: 'https://www.linkedin.com/in/dr-shweta-agrawal/',
+        email: ''
+      }
     },
     {
       name: 'Mr. Piyush Parmar',
       role: 'Professor',
       organization: 'IIST Indore',
-      expertise: 'Microsoft certified Data-Scientist',
+      expertise: 'Microsoft Certified Data-Scientist',
       image: '/mr-piyush-parmar.png',
+      links: {
+        linkedin: 'https://www.linkedin.com/in/piyush-parmar-949ba4206/',
+        email: ''
+      }
     },
     {
       name: 'Dr. Ratnesh Chaturvedi',
@@ -28,6 +48,10 @@ const Speakers = () => {
       organization: 'IIST Indore',
       expertise: 'Computer Vision Expertise',
       image: '/dr-ratnesh-chaturvedi.png',
+      links: {
+        linkedin: 'https://www.linkedin.com/in/dr-ratnesh-chaturvedi-3b108a43/',
+        email: ''
+      }
     },
     {
       name: 'Mr. Bharat Udawat',
@@ -35,20 +59,32 @@ const Speakers = () => {
       organization: 'Deloitte',
       expertise: 'AI in Management and Pharmacy',
       image: '/mr-bharat-udawat.png',
+      links: {
+        linkedin: 'https://www.linkedin.com/in/bharatudawat/',
+        email: ''
+      }
     },
     {
       name: 'Mr. Bhavesh Prajapat',
-      role: 'Student',
+      role: 'Member of AI Club',
       organization: 'IIST',
       expertise: 'ML Expertise',
       image: '/bhavesh-prajapat.png',
+      links: {
+        linkedin: 'https://www.linkedin.com/in/bhavesh-prajapat-11299633b/',
+        email: 'bhaveshprajapat9981@gmail.com'
+      }
     },
     {
       name: 'Mr. Aditya Chouksey',
-      role: 'Student',
+      role: 'Member of AI Club',
       organization: 'IIST',
       expertise: 'ML Expertise',
       image: '/aditya-chouksey.png',
+      links: {
+        linkedin: 'https://www.linkedin.com/in/aditya-chouksey-a072b5261/',
+        email: 'adityachouksey017@gmail.com'
+      }
     },
   ];
 
@@ -101,12 +137,22 @@ const Speakers = () => {
                   <p className="text-sm text-muted-foreground mb-4">{speaker.expertise}</p>
 
                   <div className="flex gap-3">
-                    <button className="w-9 h-9 rounded-lg bg-primary/10 hover:bg-primary/20 flex items-center justify-center transition-colors group/btn">
+                    <a
+                      href={speaker.links.linkedin}
+                      target="_blank"
+                      rel="noopener noreferrer"
+                      className="w-9 h-9 rounded-lg bg-primary/10 hover:bg-primary/20 flex items-center justify-center transition-colors group/btn"
+                      title={`Connect with ${speaker.name} on LinkedIn`}
+                    >
                       <Linkedin className="w-4 h-4 text-primary group-hover/btn:scale-110 transition-transform" />
-                    </button>
-                    <button className="w-9 h-9 rounded-lg bg-primary/10 hover:bg-primary/20 flex items-center justify-center transition-colors group/btn">
+                    </a>
+                    <a
+                      href={`mailto:${speaker.links.email}`}
+                      className="w-9 h-9 rounded-lg bg-primary/10 hover:bg-primary/20 flex items-center justify-center transition-colors group/btn"
+                      title={`Email ${speaker.name}`}
+                    >
                       <Mail className="w-4 h-4 text-primary group-hover/btn:scale-110 transition-transform" />
-                    </button>
+                    </a>
                   </div>
                 </div>
               </div>
