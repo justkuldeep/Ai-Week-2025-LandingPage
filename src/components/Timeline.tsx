@@ -55,7 +55,7 @@ const Timeline = () => {
     },
     {
       day: 6,
-      date: 'Nov 23',
+      date: 'Nov 22',
       title: 'Generative & Agentic AI in action',
       description: 'Explore intelligent agents and build projects using Generative AI.',
       topics: ['AI Agents', 'Auto Workflows', 'Generative Models', 'Chain of Thought', 'Showcase'],
