@@ -11,7 +11,7 @@ const Team = () => {
     {
       name: 'Mrs. Sukrati Agrawal',
       role: 'Event Coordinator',
-      image: 'https://api.dicebear.com/7.x/avataaars/svg?seed=Arjun',
+      image: '',
     },
     {
       name: 'Bhavesh Prajapat',
