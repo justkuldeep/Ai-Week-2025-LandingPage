@@ -18,14 +18,14 @@ const Venue = () => {
     {
       icon: Calendar,
       label: 'Dates',
-      value: 'December 12-17, 2025',
+      value: 'November 17-22, 2025',
       subvalue: '6 Days of Intensive Learning',
     },
     {
       icon: Clock,
       label: 'Timing',
-      value: '9:00 AM - 5:00 PM',
-      subvalue: 'Daily Sessions (Last day till 4:00 PM)',
+      value: 'To Be Announced',
+      subvalue: 'Daily Sessions (Last day till 4:40 PM)',
     },
   ];
 
