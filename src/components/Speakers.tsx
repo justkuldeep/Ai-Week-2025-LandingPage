@@ -34,14 +34,14 @@ const Speakers = () => {
       role: 'Student',
       organization: 'IIST',
       expertise: 'ML Expertise',
-      image: '../public/bhavesh-prajapat.png',
+      image: '/bhavesh-prajapat.png',
     },
     {
       name: 'Ms. Anshika Punase',
       role: 'Student',
       organization: 'IIST',
       expertise: 'ML Expertise',
-      image: '../public/anshika-punase.png',
+      image: '/anshika-punase.png',
     },
   ];
 
