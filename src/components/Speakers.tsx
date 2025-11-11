@@ -71,8 +71,8 @@ const Speakers = () => {
       expertise: 'Gen AI Expert',
       image: '/IMG-20251109-WA0006.jpg',
       links: {
-        linkedin: '',
-        email: ''
+        linkedin: 'https://www.linkedin.com/in/amanullah-khan-4977bb1ab',
+        email: 'amanullah10786@gmail.com'
       }
     },
   ];
