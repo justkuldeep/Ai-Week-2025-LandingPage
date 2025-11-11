@@ -57,7 +57,7 @@ const Speakers = () => {
       name: 'Mr. Bharat Udawat',
       role: 'Senior Consultant',
       organization: 'Deloitte',
-      expertise: '',
+      expertise: 'AI in Pharmacy and Management',
       image: '/mr-bharat-udawat.png',
       links: {
         linkedin: 'https://www.linkedin.com/in/bharatudawat/',
