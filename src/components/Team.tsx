@@ -36,7 +36,7 @@ const Team = () => {
     {
       name: 'Madhav Ratnawat',
       role: 'Media Head',
-      image: '/',
+      image: '/IMG-20251109-WA0008.jpg',
     },
     {
       name: 'Vasu Garg',
