@@ -46,7 +46,7 @@ const Speakers = () => {
       name: 'Dr. Ratnesh Chaturvedi',
       role: 'HOD of AIML Department',
       organization: 'IIST Indore',
-      expertise: 'Computer Vision Expertise',
+      expertise: 'Computer Vision Expert',
       image: '/IMG-20251111-WA0000.jpg',
       links: {
         linkedin: 'https://www.linkedin.com/in/dr-ratnesh-chaturvedi-3b108a43/',
