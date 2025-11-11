@@ -58,9 +58,9 @@ const Speakers = () => {
       role: 'Senior Consultant',
       organization: 'Deloitte',
       expertise: '',
-      image: '/IMG-20251109-WA0006.jpg',
+      image: '/mr-bharat-udawat.png',
       links: {
-        linkedin: '',
+        linkedin: 'https://www.linkedin.com/in/bharatudawat/',
         email: ''
       }
     },
@@ -69,9 +69,9 @@ const Speakers = () => {
       role: 'Software Development Enginner',
       organization: 'Neurix Technologies',
       expertise: 'Gen AI Expert',
-      image: '/mr-bharat-udawat.png',
+      image: '/IMG-20251109-WA0006.jpg',
       links: {
-        linkedin: 'https://www.linkedin.com/in/bharatudawat/',
+        linkedin: '',
         email: ''
       }
     },
