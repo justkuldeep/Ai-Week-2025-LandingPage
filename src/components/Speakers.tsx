@@ -57,33 +57,22 @@ const Speakers = () => {
       name: 'Mr. Bharat Udawat',
       role: 'Senior Consultant',
       organization: 'Deloitte',
-      expertise: 'AI in Management and Pharmacy',
+      expertise: '',
+      image: '/IMG-20251109-WA0006.jpg',
+      links: {
+        linkedin: '',
+        email: ''
+      }
+    },
+  {
+      name: 'Mr. Amanullah Khan',
+      role: 'Software Development Enginner',
+      organization: 'Neurix Technologies',
+      expertise: 'Gen AI Expert',
       image: '/mr-bharat-udawat.png',
       links: {
         linkedin: 'https://www.linkedin.com/in/bharatudawat/',
         email: ''
-      }
-    },
-    {
-      name: 'Mr. Bhavesh Prajapat',
-      role: 'Member of AI Club',
-      organization: 'IIST',
-      expertise: 'ML Expertise',
-      image: '/bhavesh-prajapat.png',
-      links: {
-        linkedin: 'https://www.linkedin.com/in/bhavesh-prajapat-11299633b/',
-        email: 'bhaveshprajapat9981@gmail.com'
-      }
-    },
-    {
-      name: 'Mr. Aditya Chouksey',
-      role: 'Member of AI Club',
-      organization: 'IIST',
-      expertise: 'ML Expertise',
-      image: '/aditya-chouksey.png',
-      links: {
-        linkedin: 'https://www.linkedin.com/in/aditya-chouksey-a072b5261/',
-        email: 'adityachouksey017@gmail.com'
       }
     },
   ];
