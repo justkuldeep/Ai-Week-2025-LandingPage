@@ -74,6 +74,17 @@ const Speakers = () => {
         linkedin: 'https://www.linkedin.com/in/amanullah-khan-4977bb1ab',
         email: 'amanullah10786@gmail.com'
       }
+  },
+    {
+      name: 'Mr. Vaibhav Jain',
+      role: 'Chief Executive Officer',
+      organization: 'Neuratantra AI',
+      expertise: 'Agentic AI Systems and Automation Workflows Expert',
+      image: '/IMG-20251111-WA0001.jpg',
+      links: {
+        linkedin: 'https://www.linkedin.com/in/vaibhavjaindatascientist',
+        email: 'vaibhav.jain06@nagarro.com'
+      }
     },
   ];
 
