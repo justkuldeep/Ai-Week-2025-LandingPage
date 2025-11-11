@@ -34,6 +34,11 @@ const Team = () => {
       image: '/anshika-punase.png',
     },
     {
+      name: 'Madhav Ratnawat',
+      role: 'Media Head',
+      image: '/',
+    },
+    {
       name: 'Vasu Garg',
       role: 'Volunteer Coordinator',
       image: '/vasu-garg.png',
