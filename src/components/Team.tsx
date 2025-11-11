@@ -11,7 +11,7 @@ const Team = () => {
     {
       name: 'Mrs. Sukrati Agrawal',
       role: 'Event Coordinator',
-      image: '',
+      image: '/IMG_20251111_120610.jpg',
     },
     {
       name: 'Bhavesh Prajapat',
