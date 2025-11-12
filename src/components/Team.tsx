@@ -7,43 +7,21 @@ const Team = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
+
   const coordinator = {
     name: 'Mrs. Sukrati Agrawal',
     role: 'Event Coordinator',
     image: '/mrs-sukrati-agarwal.png',
   };
 
+ 
   const organizers = [
-    {
-      name: 'Bhavesh Prajapat',
-      role: 'Technical Lead',
-      image: '/bhavesh-prajapat.png',
-    },
-    {
-      name: 'Aaradhya Rassay',
-      role: 'Logistics Manager',
-      image: '/aaradhya-rassay2.png',
-    },
-    {
-      name: 'Nishita Kanojiya',
-      role: 'Marketing Head',
-      image: '/nishita-kanojiya.png',
-    },
-    {
-      name: 'Anshika Punase',
-      role: 'Content Manager',
-      image: '/anshika-punase.png',
-    },
-    {
-      name: 'Madhav Ratnawat',
-      role: 'Media Head',
-      image: '/IMG-20251109-WA0008.jpg',
-    },
-    {
-      name: 'Vasu Garg',
-      role: 'Volunteer Coordinator',
-      image: '/vasu-garg.png',
-    },
+    { name: 'Bhavesh Prajapat', role: 'Technical Lead', image: '/bhavesh-prajapat.png' },
+    { name: 'Aaradhya Rassay', role: 'Logistics Manager', image: '/aaradhya-rassay2.png' },
+    { name: 'Nishita Kanojiya', role: 'Marketing Head', image: '/nishita-kanojiya.png' },
+    { name: 'Anshika Punase', role: 'Content Manager', image: '/anshika-punase.png' },
+    { name: 'Madhav Ratnawat', role: 'Media Head', image: '/IMG-20251109-WA0008.jpg' },
+    { name: 'Vasu Garg', role: 'Volunteer Coordinator', image: '/vasu-garg.png' },
   ];
 
   return (
@@ -69,23 +47,23 @@ const Team = () => {
         </motion.div>
 
         {/* Event Coordinator Section */}
-        <div className="max-w-md mx-auto mb-20">
+        <div className="max-w-sm mx-auto mb-20">
           <motion.div
             initial={{ opacity: 0, scale: 0.9 }}
             animate={isInView ? { opacity: 1, scale: 1 } : {}}
             transition={{ duration: 0.5 }}
             className="group"
           >
-            <div className="p-6 rounded-xl bg-card border border-border hover:border-primary/50 transition-all hover:shadow-glow text-center">
-              <div className="w-32 h-32 mx-auto mb-4 rounded-full bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center overflow-hidden group-hover:scale-105 transition-transform">
+            <div className="p-6 rounded-2xl bg-card border-2 border-amber-400 hover:shadow-[0_0_20px_rgba(251,191,36,0.6)] transition-all text-center">
+              <div className="w-36 h-36 mx-auto mb-4 rounded-full bg-gradient-to-br from-amber-200 to-yellow-300 flex items-center justify-center overflow-hidden group-hover:scale-105 transition-transform">
                 <img
                   src={coordinator.image}
                   alt={coordinator.name}
                   className="w-full h-full object-cover"
                 />
               </div>
-              <h3 className="text-lg font-bold mb-1">{coordinator.name}</h3>
-              <p className="text-sm text-primary">{coordinator.role}</p>
+              <h3 className="text-xl font-bold mb-1">{coordinator.name}</h3>
+              <p className="text-base text-amber-600 font-medium">{coordinator.role}</p>
             </div>
           </motion.div>
         </div>
