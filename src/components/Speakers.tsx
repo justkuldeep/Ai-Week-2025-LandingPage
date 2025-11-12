@@ -28,7 +28,7 @@ const Speakers = () => {
       image: '/dr-shweta-agrawal.png',
       links: {
         linkedin: 'https://www.linkedin.com/in/dr-shweta-agrawal/',
-        email: ''
+        email: 'shweta_agrawal1883@rediffmail.com'
       }
     },
     {
@@ -39,7 +39,7 @@ const Speakers = () => {
       image: '/mr-piyush-parmar.png',
       links: {
         linkedin: 'https://www.linkedin.com/in/piyush-parmar-949ba4206/',
-        email: ''
+        email: 'piyushparmards@gmail.com'
       }
     },
     {
@@ -61,7 +61,7 @@ const Speakers = () => {
       image: '/mr-bharat-udawat.png',
       links: {
         linkedin: 'https://www.linkedin.com/in/bharatudawat/',
-        email: ''
+        email: 'bharatu18@gmail.com'
       }
     },
   {
