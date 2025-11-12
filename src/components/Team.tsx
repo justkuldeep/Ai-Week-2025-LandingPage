@@ -20,7 +20,7 @@ const Team = () => {
     { name: 'Aaradhya Rassay', role: 'Logistics Manager', image: '/aaradhya-rassay2.png' },
     { name: 'Nishita Kanojiya', role: 'Marketing Head', image: '/nishita-kanojiya.png' },
     { name: 'Anshika Punase', role: 'Content Manager', image: '/anshika-punase.png' },
-    { name: 'Madhav Ratnawat', role: 'Media Head', image: '/IMG-20251109-WA0008.jpg' },
+    { name: 'Madhav Ratnawat', role: 'Media Head', image: '/madhav-ratnawat.png' },
     { name: 'Vasu Garg', role: 'Volunteer Coordinator', image: '/vasu-garg.png' },
   ];
 
