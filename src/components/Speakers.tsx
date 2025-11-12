@@ -47,7 +47,7 @@ const Speakers = () => {
       role: 'HOD AIML',
       organization: 'IIST Indore',
       expertise: 'Computer Vision Expert',
-      image: '/IMG-20251111-WA0000.jpg',
+      image: '/dr-ratnesh-chaturvedi2.png',
       links: {
         linkedin: 'https://www.linkedin.com/in/dr-ratnesh-chaturvedi-3b108a43/',
         email: ''
