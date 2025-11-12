@@ -7,12 +7,13 @@ const Team = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
-  const teamMembers = [
-    {
-      name: 'Mrs. Sukrati Agrawal',
-      role: 'Event Coordinator',
-      image: '/IMG_20251111_120610.jpg',
-    },
+  const coordinator = {
+    name: 'Mrs. Sukrati Agrawal',
+    role: 'Event Coordinator',
+    image: '/mrs-sukrati-agarwal.png',
+  };
+
+  const organizers = [
     {
       name: 'Bhavesh Prajapat',
       role: 'Technical Lead',
@@ -48,6 +49,7 @@ const Team = () => {
   return (
     <section id="team" className="py-20 md:py-32 bg-gradient-to-b from-background to-primary/5">
       <div className="container mx-auto px-4" ref={ref}>
+        {/* Heading Section */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
           animate={isInView ? { opacity: 1, y: 0 } : {}}
@@ -66,8 +68,31 @@ const Team = () => {
           </p>
         </motion.div>
 
+        {/* Event Coordinator Section */}
+        <div className="max-w-md mx-auto mb-20">
+          <motion.div
+            initial={{ opacity: 0, scale: 0.9 }}
+            animate={isInView ? { opacity: 1, scale: 1 } : {}}
+            transition={{ duration: 0.5 }}
+            className="group"
+          >
+            <div className="p-6 rounded-xl bg-card border border-border hover:border-primary/50 transition-all hover:shadow-glow text-center">
+              <div className="w-32 h-32 mx-auto mb-4 rounded-full bg-gradient-to-br from-primary/20 to-accent/20 flex items-center justify-center overflow-hidden group-hover:scale-105 transition-transform">
+                <img
+                  src={coordinator.image}
+                  alt={coordinator.name}
+                  className="w-full h-full object-cover"
+                />
+              </div>
+              <h3 className="text-lg font-bold mb-1">{coordinator.name}</h3>
+              <p className="text-sm text-primary">{coordinator.role}</p>
+            </div>
+          </motion.div>
+        </div>
+
+        {/* Organizers Grid Section */}
         <div className="grid sm:grid-cols-2 lg:grid-cols-3 gap-6 max-w-5xl mx-auto">
-          {teamMembers.map((member, index) => (
+          {organizers.map((member, index) => (
             <motion.div
               key={member.name}
               initial={{ opacity: 0, scale: 0.9 }}
