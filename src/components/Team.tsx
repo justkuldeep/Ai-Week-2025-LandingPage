@@ -16,7 +16,7 @@ const Team = () => {
 
   const organizers = [
     { name: 'Bhavesh Prajapat', role: 'Event Coordinator', image: '/bhavesh-prajapat.png', phone: '+91 9876543211' },
-    { name: 'Kuldeep Soni', role: 'Technical Lead', image: '/kuldeep-soni.png', phone: '+91 9893859780' },
+    { name: 'Kuldeep Soni', role: 'Technical Lead', image: '/kuldeep-soni1.png', phone: '+91 9893859780' },
     { name: 'Aaradhya Rassay', role: 'Logistics Head', image: '/aaradhya-rassay2.png', phone: '+91 9993013274' },
     { name: 'Anshika Punase', role: 'Design Head', image: '/anshika-punase.png', phone: '+91 9575383029' },
     { name: 'Nishita Kanojiya', role: 'Marketing Head', image: '/nishita-kanojiya.png', phone: '+91 8770266294' },
