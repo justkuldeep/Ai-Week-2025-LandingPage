@@ -1,32 +1,34 @@
 import { motion } from 'framer-motion';
 import { useInView } from 'framer-motion';
 import { useRef } from 'react';
-import { Users } from 'lucide-react';
+import { Users, Phone } from 'lucide-react';
 
 const Team = () => {
   const ref = useRef(null);
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
-
   const coordinator = {
     name: 'Mrs. Sukrati Agrawal',
     role: 'Faculty Coordinator',
     image: '/mrs-sukrati-agarwal.png',
+    phone: '',//+91 8982493161
   };
 
- 
   const organizers = [
-    { name: 'Bhavesh Prajapat', role: 'Event Coordinator', image: '/bhavesh-prajapat.png' },
-    { name: 'Aaradhya Rassay', role: 'Logistics Head', image: '/aaradhya-rassay2.png' },
-    { name: 'Nishita Kanojiya', role: 'Marketing Head', image: '/nishita-kanojiya.png' },
-    { name: 'Anshika Punase', role: 'Content Head', image: '/anshika-punase.png' },
-    { name: 'Madhav Ratnawat', role: 'Media Head', image: '/madhav-ratnawat.png' },
-    { name: 'Vasu Garg', role: 'Volunteer Coordinator', image: '/vasu-garg.png' },
+    { name: 'Bhavesh Prajapat', role: 'Event Coordinator', image: '/bhavesh-prajapat.png', phone: '+91 9876543211' },
+    { name: 'Kuldeep Soni', role: 'Technical Lead', image: '/kuldeep-soni.png', phone: '+91 9893859780' },
+    { name: 'Aaradhya Rassay', role: 'Logistics Head', image: '/aaradhya-rassay2.png', phone: '+91 9993013274' },
+    { name: 'Anshika Punase', role: 'Design Head', image: '/anshika-punase.png', phone: '+91 9575383029' },
+    { name: 'Nishita Kanojiya', role: 'Marketing Head', image: '/nishita-kanojiya.png', phone: '+91 8770266294' },
+    { name: 'Aditya Chouksey', role: 'Registration Head', image: '/aditya-chouksey.png', phone: '+91 7999105415' },
+    { name: 'Madhav Ratnawat', role: 'Media Head', image: '/madhav-ratnawat.png', phone: '+91 9479579230' },
+    { name: 'Vasu Garg', role: 'Volunteer Coordinator', image: '/vasu-garg.png', phone: '+91 8305077332' },
   ];
 
   return (
     <section id="team" className="py-20 md:py-32 bg-gradient-to-b from-background to-primary/5">
       <div className="container mx-auto px-4" ref={ref}>
+        
         {/* Heading Section */}
         <motion.div
           initial={{ opacity: 0, y: 30 }}
@@ -64,6 +66,12 @@ const Team = () => {
               </div>
               <h3 className="text-xl font-bold mb-1">{coordinator.name}</h3>
               <p className="text-base text-amber-600 font-medium">{coordinator.role}</p>
+              <a
+                href={`tel:${coordinator.phone}`}
+                className="flex items-center justify-center gap-2 text-sm text-muted-foreground mt-2 hover:text-amber-600 transition-colors"
+              >
+                <Phone className="w-4 h-4" /> {coordinator.phone}
+              </a>
             </div>
           </motion.div>
         </div>
@@ -88,6 +96,12 @@ const Team = () => {
                 </div>
                 <h3 className="text-lg font-bold mb-1">{member.name}</h3>
                 <p className="text-sm text-primary">{member.role}</p>
+                <a
+                  href={`tel:${member.phone}`}
+                  className="flex items-center justify-center gap-1 text-xs text-muted-foreground mt-1 hover:text-primary transition-colors"
+                >
+                  <Phone className="w-3 h-3" /> {member.phone}
+                </a>
               </div>
             </motion.div>
           ))}
