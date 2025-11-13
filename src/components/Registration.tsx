@@ -9,7 +9,7 @@ const Registration = () => {
   const isInView = useInView(ref, { once: true, margin: "-100px" });
 
   // Replace this with your Google Form URL when available
-  const googleFormUrl = "https://forms.gle/X7UPoFWDGKxbzuG79" ; 
+  const googleFormUrl = ""; 
 
   const handleRegisterClick = () => {
     window.open(googleFormUrl, '_blank');
@@ -50,7 +50,7 @@ const Registration = () => {
             size="lg"
             className="bg-gradient-primary hover:shadow-glow-strong transition-all text-lg px-8"
           >
-            Open Registration Form
+            Registrations are closed Now!
           </Button>
           
           <p className="text-sm text-muted-foreground mt-4">
