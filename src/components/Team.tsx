@@ -10,13 +10,13 @@ const Team = () => {
 
   const coordinator = {
     name: 'Mrs. Sukrati Agrawal',
-    role: 'Event Coordinator',
+    role: 'Faculty Coordinator',
     image: '/mrs-sukrati-agarwal.png',
   };
 
  
   const organizers = [
-    { name: 'Bhavesh Prajapat', role: 'Technical Lead', image: '/bhavesh-prajapat.png' },
+    { name: 'Bhavesh Prajapat', role: 'Event Coordinator', image: '/bhavesh-prajapat.png' },
     { name: 'Aaradhya Rassay', role: 'Logistics Manager', image: '/aaradhya-rassay2.png' },
     { name: 'Nishita Kanojiya', role: 'Marketing Head', image: '/nishita-kanojiya.png' },
     { name: 'Anshika Punase', role: 'Content Manager', image: '/anshika-punase.png' },
