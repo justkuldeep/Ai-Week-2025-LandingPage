@@ -17,9 +17,9 @@ const Team = () => {
  
   const organizers = [
     { name: 'Bhavesh Prajapat', role: 'Event Coordinator', image: '/bhavesh-prajapat.png' },
-    { name: 'Aaradhya Rassay', role: 'Logistics Manager', image: '/aaradhya-rassay2.png' },
+    { name: 'Aaradhya Rassay', role: 'Logistics Head', image: '/aaradhya-rassay2.png' },
     { name: 'Nishita Kanojiya', role: 'Marketing Head', image: '/nishita-kanojiya.png' },
-    { name: 'Anshika Punase', role: 'Content Manager', image: '/anshika-punase.png' },
+    { name: 'Anshika Punase', role: 'Content Head', image: '/anshika-punase.png' },
     { name: 'Madhav Ratnawat', role: 'Media Head', image: '/madhav-ratnawat.png' },
     { name: 'Vasu Garg', role: 'Volunteer Coordinator', image: '/vasu-garg.png' },
   ];
