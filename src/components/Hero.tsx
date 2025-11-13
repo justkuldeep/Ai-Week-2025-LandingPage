@@ -146,7 +146,7 @@ const Hero = () => {
               onClick={scrollToRegister}
               className="bg-gradient-primary text-lg px-8 py-6 hover:shadow-glow-strong transition-all animate-glow-pulse"
             >
-              Register Now - It's Free!
+              Registrations are closed Now!
             </Button>
           </motion.div>
         </motion.div>
