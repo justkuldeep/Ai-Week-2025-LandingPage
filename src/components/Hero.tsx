@@ -12,7 +12,7 @@ const Hero = () => {
   });
 
   useEffect(() => {
-    const eventDate = new Date('2025-11-17T10:00:00').getTime();
+    const eventDate = new Date('2025-11-17T15:00:00').getTime();
 
     const timer = setInterval(() => {
       const now = new Date().getTime();
