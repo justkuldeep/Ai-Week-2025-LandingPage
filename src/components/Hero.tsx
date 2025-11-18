@@ -11,23 +11,34 @@ const Hero = () => {
     seconds: 0,
   });
 
-  useEffect(() => {
-    const eventDate = new Date('2025-11-17T15:00:00').getTime();
+   useEffect(() => {
+  const eventDate = new Date('2025-11-17T03:00:00').getTime(); // YOUR EVENT DATE
 
-    const timer = setInterval(() => {
-      const now = new Date().getTime();
-      const distance = eventDate - now;
+  const timer = setInterval(() => {
+    const now = new Date().getTime();
+    const distance = eventDate - now;
 
+    if (distance <= 0) {
+      // Event passed or invalid: show zeros instead of NaN
       setTimeLeft({
-        days: Math.floor(distance / (1000 * 60 * 60 * 24)),
-        hours: Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
-        minutes: Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)),
-        seconds: Math.floor((distance % (1000 * 60)) / 1000),
+        days: 0,
+        hours: 0,
+        minutes: 0,
+        seconds: 0,
       });
-    }, 1000);
+      return;
+    }
 
-    return () => clearInterval(timer);
-  }, []);
+    setTimeLeft({
+      days: Math.floor(distance / (1000 * 60 * 60 * 24)),
+      hours: Math.floor((distance % (1000 * 60 * 60 * 24)) / (1000 * 60 * 60)),
+      minutes: Math.floor((distance % (1000 * 60 * 60)) / (1000 * 60)),
+      seconds: Math.floor((distance % (1000 * 60)) / 1000),
+    });
+  }, 1000);
+
+  return () => clearInterval(timer);
+}, []);
 
   const scrollToRegister = () => {
     const element = document.getElementById('register');
