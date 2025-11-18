@@ -11,7 +11,7 @@ const Team = () => {
     name: 'Mrs. Sukrati Agrawal',
     role: 'Faculty Coordinator',
     image: '/mrs-sukrati-agarwal.png',
-    phone: '',//+91 8982493161
+    phone: '',
   };
 
   const organizers = [
