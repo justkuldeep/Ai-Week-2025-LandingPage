@@ -24,7 +24,7 @@ const Venue = () => {
     {
       icon: Clock,
       label: 'Timing',
-      value: 'To Be Announced',
+      value: '3:00 to 4:40 PM',
       subvalue: 'Daily Sessions (Last day till 4:40 PM)',
     },
   ];
